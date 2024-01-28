@@ -2,6 +2,9 @@ import React from "react";
 import './content.styles.css';
 
 export const Content = ({ email }) => {
+    if (!email) {
+        return;
+    }
     const { from, address, time, subject, message } = email;
 
     return (
