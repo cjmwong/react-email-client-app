@@ -14,17 +14,25 @@
     font-size: 12px;
   }
 
-  #header {
-    font-size: 18px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
+#header {
+  font-size: 18px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
 
-  .email-tile:hover {
-    transform: scale(0.99);
-  }
+.email-tile:hover {
+  transform: scale(0.99);
+}
 
-  .email-tile p {
-    margin-top: 2px;
-    margin-bottom: 2px;
-  }
+.email-tile p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.read {
+  background-color: rgba(255, 255, 255, 0.37);
+}
+
+.active {
+  background-color: black;
+}
