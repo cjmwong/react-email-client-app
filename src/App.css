@@ -6,18 +6,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(252, 248, 248);
+  max-height: 1350px;
 
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Icon {
+  align-self: center;
+  margin-left: 50px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.Search {
+  text-align: center;
+  padding-right: 24px;
 }
 
 .Body {
   display: grid;
   grid-template-columns: 1fr 5fr 20fr;
   max-width: 2440px;
-}
-
-.Search {
-  text-align: center;
-  padding-right: 24px;
 }
 
 .Menu {

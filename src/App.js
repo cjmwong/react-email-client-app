@@ -5,6 +5,7 @@ import Content from "./components/content/content.component";
 import SearchBar from './components/search-bar/searchbar.component';
 import Inbox from './components/inbox-deleted/inbox.component';
 import Trash from './components/inbox-deleted/trash.component';
+import mail from './mail.png';
 
 var currentFolder = "inbox"; //set default view to inbox
 
@@ -111,8 +112,17 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='Search'>
-        <SearchBar placeholder={"Search By Subject (Press Enter To Search)"} onKeyDown={handleSearch}/>
+      <div className='Header'>
+        <div className='Icon'>
+            <img src={mail}
+            width="50"
+            height="50"
+            alt="mail icon"/>
+            Mail App
+          </div>
+        <div className='Search'>
+          <SearchBar placeholder={"Search By Subject (Press Enter To Search)"} onKeyDown={handleSearch}/>
+        </div>
       </div>
       <div className='Body'>
         <div className='Menu'>
