@@ -31,27 +31,33 @@ function App() {
   useEffect(() => {
     let filtered = [];
     if (searchInput === "") {
-      filtered = emails
+      filtered = filteredEmails
     } else {
       filtered = emails.filter(email =>
         email.subject.toLowerCase().includes(searchInput.toLowerCase())
       );
+      currentFolder = 'search'
     }
-    setFilteredEmails(filtered);
-  }, [emails, searchInput]);
+    setFilteredEmails(filtered); // eslint-disable-next-line
+  }, [searchInput]);
 
   const handleSidebarClick = (emailID) => {
     const email = emails.find(email => email.id === emailID);
     setContent(email);
+
     const updatedEmails = emails.map(email => {
       if (email.id === emailID) {
         email.read = "active";
       } else if (email.read === "active") {
         email.read = "true"
       }
-
       return email;
     });
+
+    if (currentFolder === 'search'){
+      return;
+    }
+
     let filtered = [];
     filtered = updatedEmails.filter(email => email.tag.includes(currentFolder));
     setFilteredEmails(filtered);
@@ -82,7 +88,7 @@ function App() {
   return (
     <div className='App'>
       <div className='Search'>
-        <SearchBar placeholder={"Search Emails"} onKeyDown={handleSearch}/>
+        <SearchBar placeholder={"Search By Subject (Press Enter To Search)"} onKeyDown={handleSearch}/>
       </div>
       <div className='Body'>
         <div className='Menu'>

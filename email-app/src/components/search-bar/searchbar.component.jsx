@@ -11,7 +11,7 @@ export const SearchBar = ({ placeholder, onKeyDown }) => {
     className="searchbar"
     type="search"
     placeholder={placeholder}
-    onKeyDown={handleKeyDown} //use onclick for assignment
+    onKeyDown={handleKeyDown}
     />
 )};
 
