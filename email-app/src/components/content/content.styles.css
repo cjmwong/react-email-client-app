@@ -1,0 +1,26 @@
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+#subject {
+    font-size: 24px;
+    text-align: left;
+}
+
+#info {
+    font-size: 12px;
+    text-align: left;
+}
+
+#body {
+    display:grid;
+    padding-top:12px;
+    grid-template-columns: 1fr 10fr 1fr;
+    font-size: 14px;
+    text-align: left;
+}
+
+#column2 {
+    grid-column: 2;
+}

@@ -4,7 +4,7 @@ import "./emailList.styles.css";
 
 
 export const EmailList = ({ emails, onSidebarClick }) => (
-    <div class='emaillist'>
+    <div className='emaillist'>
         {emails.map(email => (
             <Tile key={email.id} email={email} onClick={onSidebarClick} />
         ))}

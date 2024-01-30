@@ -7,7 +7,6 @@ export const Tile = ({ email, onClick }) => {
 
     const handleClick = () => {
         onClick(id);
-
     };
 
     const tile = ((read) => {

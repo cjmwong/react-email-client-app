@@ -12,6 +12,7 @@
     transition: transform 0.25s ease-out;
     max-height: 100px;
     font-size: 12px;
+    min-width: 170px;
   }
 
 #header {

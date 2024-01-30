@@ -2,18 +2,21 @@ import React from "react";
 import './content.styles.css';
 
 export const Content = ({ email }) => {
-    if (!email) {
-        return;
+    if (email.length === 0) {
+        return null;
     }
     const { from, address, time, subject, message } = email;
-
     return (
-    <div>
-    <h2>{from}</h2>
-    <p>{subject}</p>
-    <p>{address}</p>
-    <p>{time}</p>
-    <p>{message}</p>
+    <div className='container'>
+        <h2 id='subject'>{subject}</h2>
+        <div id='info'>
+            <p><b>From:</b>  {from}</p>
+            <p><b>Email:</b>  {address}</p>
+            <p><b>Sent At:</b>  {time}</p>
+        </div>
+        <div id='body'>
+            <p id='column2'>{message}</p>
+        </div>
     </div>
     )};
 
