@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-email-client-app/static/css/main.b60316b8.css",
-    "main.js": "/react-email-client-app/static/js/main.178eaa3b.js",
+    "main.css": "/react-email-client-app/static/css/main.9c83be3d.css",
+    "main.js": "/react-email-client-app/static/js/main.7d15a7f3.js",
     "static/js/787.28d34e05.chunk.js": "/react-email-client-app/static/js/787.28d34e05.chunk.js",
     "index.html": "/react-email-client-app/index.html",
     "static/media/trash.svg": "/react-email-client-app/static/media/trash.63a8428b394aa66d4e9a6f3480718515.svg",
     "static/media/mail.svg": "/react-email-client-app/static/media/mail.821461465e88f8f199ec90c3cd9567b9.svg",
-    "main.b60316b8.css.map": "/react-email-client-app/static/css/main.b60316b8.css.map",
-    "main.178eaa3b.js.map": "/react-email-client-app/static/js/main.178eaa3b.js.map",
+    "main.9c83be3d.css.map": "/react-email-client-app/static/css/main.9c83be3d.css.map",
+    "main.7d15a7f3.js.map": "/react-email-client-app/static/js/main.7d15a7f3.js.map",
     "787.28d34e05.chunk.js.map": "/react-email-client-app/static/js/787.28d34e05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b60316b8.css",
-    "static/js/main.178eaa3b.js"
+    "static/css/main.9c83be3d.css",
+    "static/js/main.7d15a7f3.js"
   ]
 }
