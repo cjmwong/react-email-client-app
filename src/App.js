@@ -67,7 +67,7 @@ function App() {
       }
       return email;
     });
-
+    setEmails(updatedEmails);
     //keeps sidebar from updating when clicking on a email on sidebar that was searched for
     if (currentFolder === 'search'){
       return;
