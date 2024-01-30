@@ -1,6 +1,12 @@
 import React from "react";
 import './content.styles.css';
 
+/**
+ * Content component to be used for displaying the contents of an email
+ *
+ * @param {email} object email object that contains information about the email sent
+ * @return {ReactNode} A React element that renders the contents contained about the email
+ */
 export const Content = ({ email }) => {
     if (email.length === 0) {
         return null;

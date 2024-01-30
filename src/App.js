@@ -15,6 +15,10 @@ function App() {
   const [filteredEmails, setFilteredEmails] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
+  /**
+   * Fetch emails as JSON, stores in array Emails, and sets email objects
+   * with the tag 'inbox' as the default data shown when site launches
+   */
   useEffect (() => {
     const fetchEmails = async () => {;
       const response = await fetch("https://gist.githubusercontent.com/mrchenliang/15e1989583fd6e6e04e1c49287934c91/raw/ed03cfea1e2edb0303543d2908cd7429ed75580d/email.json");
@@ -28,6 +32,10 @@ function App() {
     fetchEmails();
   }, []);
 
+  /**
+   * Listens for changes in the input string of the search bar and filters emails that are
+   * displayed on the sidebar based on the input string
+   */
   useEffect(() => {
     let filtered = [];
     if (searchInput === "") {
@@ -41,6 +49,11 @@ function App() {
     setFilteredEmails(filtered); // eslint-disable-next-line
   }, [searchInput]);
 
+  /**
+   * When email tile on the side bar is clicked, changes read status of the email to the correct status
+   * and displays the chosen emails content on the body of the page
+   * @param {String} emailID id of the email that was clicked
+   */
   const handleSidebarClick = (emailID) => {
     const email = emails.find(email => email.id === emailID);
     setContent(email);
@@ -54,6 +67,7 @@ function App() {
       return email;
     });
 
+    //keeps sidebar from updating when clicking on a email on sidebar that was searched for
     if (currentFolder === 'search'){
       return;
     }
@@ -63,12 +77,19 @@ function App() {
     setFilteredEmails(filtered);
   }
 
-  const handleSearch = (e) => {
-    if (e.key === "Enter") {
-      setSearchInput(e.target.value)
+  /**
+   * Sets search input value to trigger useEffect when enter button pressed
+   * @param {*} event variable holding information on key pressed and the value it holds
+   */
+  const handleSearch = (event) => {
+    if (event.key === "Enter") {
+      setSearchInput(event.target.value)
     }
   };
 
+  /**
+   * Updates sidebar email tiles to show only emails with the tag 'inbox'
+   */
   const handleInbox = () => {
     currentFolder = "inbox";
     let inbox = [];
@@ -77,6 +98,9 @@ function App() {
     setFilteredEmails(inbox)
   };
 
+  /**
+   * Updates sidebar email tiles to show only emails with the tag 'deleted'
+   */
   const handleTrash = () => {
     currentFolder = "deleted";
     let trash = [];
