@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cjmwong/react-email-client-app/static/css/main.b60316b8.css",
+    "main.js": "/cjmwong/react-email-client-app/static/js/main.6fd4067e.js",
+    "static/js/787.28d34e05.chunk.js": "/cjmwong/react-email-client-app/static/js/787.28d34e05.chunk.js",
+    "index.html": "/cjmwong/react-email-client-app/index.html",
+    "static/media/trash.svg": "/cjmwong/react-email-client-app/static/media/trash.63a8428b394aa66d4e9a6f3480718515.svg",
+    "static/media/mail.svg": "/cjmwong/react-email-client-app/static/media/mail.821461465e88f8f199ec90c3cd9567b9.svg",
+    "main.b60316b8.css.map": "/cjmwong/react-email-client-app/static/css/main.b60316b8.css.map",
+    "main.6fd4067e.js.map": "/cjmwong/react-email-client-app/static/js/main.6fd4067e.js.map",
+    "787.28d34e05.chunk.js.map": "/cjmwong/react-email-client-app/static/js/787.28d34e05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b60316b8.css",
+    "static/js/main.6fd4067e.js"
+  ]
+}
